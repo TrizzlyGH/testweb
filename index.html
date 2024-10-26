@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' styles.css 'sha256-your-hash'; img-src data:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'sha256-your-hash'; img-src data:; connect-src 'self'; require-trusted-types-for 'script';">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
     </style>
 </head>
