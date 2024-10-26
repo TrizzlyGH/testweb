@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-your-hash'; img-src data:; connect-src 'self'; require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline' 'sha256-your-hash'; img-src 'self' data:; connect-src 'self'; require-trusted-types-for 'script';">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Add some styles for the button */
+        .github-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #24292e; /* GitHub button background */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .github-button img {
+            width: 20px; /* Adjust the size of the logo */
+            height: 20px;
+            margin-right: 8px; /* Space between the logo and text */
+        }
+
+        .logo-img (
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+        )
+
     </style>
 </head>
 <body>
@@ -28,15 +55,19 @@
 
     <section class="showcase">
         <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a simple portfolio to showcase my projects and skills.</p>
+            <h1>Explore My Creative Journey</h1>
+            <p>Welcome to my portfolio! Here, you'll find a collection of my projects, skills, and experiences that reflect my passion for technology, design, and problem-solving. Dive in to see how I bring ideas to life and constantly push the boundaries of what’s possible.</p>
+            <a href="https://github.com/TrizzlyGH" class="github-button">
+                <img src="github-mark-white.png" alt="" class="logo-img"> 
+                <p>Visit My GitHub</p>
+            </a>
         </div>
-    </section>
-
+    </section>    
     <section class="content container">
         <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I enjoy working on challenging projects and learning new technologies.</p>
-        
+        <p style="text-align: justify;">I am a Computer Science student at Gunadarma University with a deep interest in business, particularly in marketing, branding, and sales. As an action-oriented and results-driven individual, I have experience working as a Copywriter and Sales Associate at Impact Data Dynamics, a small agency focused on promoting startups. Over the past year, I have honed my skills in communication, leadership, and market analysis, which have helped me identify growth opportunities for clients.</p>
+        <p style="text-align: justify;">With a strong background in psychology, I can understand customer needs and develop effective marketing strategies. Alongside my professional experience, I am actively involved in various campus activities, including serving as the chairman and secretary of the Scientific Study Group (KIR) and participating in arts events as a band vocalist. I am committed to continually advancing my skills in technology and business, with a long-term goal of becoming a CEO in a company that sells digital services or online products.</p>
+    
         <h2>My Projects</h2>
         <ul>
             <li>Project 1: <a href="#">Link to Project 1</a></li>
@@ -45,11 +76,10 @@
             <li>Project 4: <a href="#">Link to Project 4</a></li>
             <li>Project 5: <a href="#">Link to Project 5</a></li>
         </ul>
-        
+    
         <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, you can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        <p style="text-align: justify;">If you'd like to get in touch, feel free to reach me at <a href="mailto:nasywanarhata@gmail.com">nasywanarhata@gmail.com</a>.</p>
     </section>
-
     <footer>
         <p>My Portfolio &copy; 2024</p>
     </footer>
