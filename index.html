@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; script-src 'nonce-abc123'; require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        script-src 'nonce-RANDOM_NONCE';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        connect-src 'self';
+        base-uri 'self';
+        require-trusted-types-for 'script';
+    ">
     <title>My Portfolio</title>
-
     <style>
-        /* Add some styles for the button */
         .github-button {
             display: inline-flex;
             align-items: center;
-            background-color: #24292e; /* GitHub button background */
+            background-color: #24292e; 
             color: white;
             padding: 10px 15px;
             border: none;
@@ -23,9 +29,9 @@
         }
 
         .github-button img {
-            width: 20px; /* Adjust the size of the logo */
+            width: 20px; 
             height: 20px;
-            margin-right: 8px; /* Space between the logo and text */
+            margin-right: 8px; 
         }
 
         .logo-img {
@@ -33,7 +39,7 @@
             height: 10%;
             border-radius: 50%;
         }
-        
+
         .body {
             font-family: Arial, sans-serif;
             background-color: #002b36;
@@ -160,8 +166,5 @@
     <footer>
         <p>My Portfolio &copy; 2024</p>
     </footer>
-    <script nonce="abc123">
-        console.log('Inline script is executed.');
-    </script>
 </body>
 </html>
